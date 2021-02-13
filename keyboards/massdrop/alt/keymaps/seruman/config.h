@@ -1,0 +1,5 @@
+#pragma once
+
+// Disable RGB by default
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
+#define RGB_MATRIX_STARTUP_VAL 0
