@@ -156,7 +156,11 @@ bool pointing_device_driver_init(void) {
 #endif
         pmw3360_cpi_set(CPI_DEFAULT - 1);
     }
+#ifdef SPLIT_KEYBOARD
+    return true;
+#else
     return keyball.this_have_ball;
+#endif
 }
 
 uint16_t pointing_device_driver_get_cpi(void) {
