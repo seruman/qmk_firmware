@@ -24,12 +24,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS     { F4, F5, F6, F7 }
 #define MATRIX_COL_PINS     { D2, D4, C6, D7, E6, B4 }
 #define MATRIX_MASKED
-#define DEBOUNCE            5
 
 // RGB LED settings
 #define WS2812_DI_PIN       D3
 #ifdef RGBLIGHT_ENABLE
-#    define RGBLED_NUM      20
+#    define RGBLIGHT_LED_COUNT 20
 #    ifndef RGBLIGHT_LIMIT_VAL
 #        define RGBLIGHT_LIMIT_VAL  255 // limitated for power consumption
 #    endif
